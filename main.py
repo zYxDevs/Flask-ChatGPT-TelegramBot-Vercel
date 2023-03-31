@@ -26,8 +26,7 @@ LANGUAGE_TABLE = {
 
 class Prompts:
     def __init__(self):
-        self.msg_list = []
-        self.msg_list.append(f"AI:{LANGUAGE_TABLE[chat_language]}")
+        self.msg_list = [f"AI:{LANGUAGE_TABLE[chat_language]}"]
 	    
     def add_msg(self, new_msg):
         if len(self.msg_list) >= MSG_LIST_LIMIT:
